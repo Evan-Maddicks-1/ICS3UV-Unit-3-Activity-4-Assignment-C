@@ -19,11 +19,9 @@ const isStudent = student?.toLowerCase() === "yes"
 //Check nececities and make correct statement
 if (isStudent && age >= 13 && age <= 19) {
   console.log(`Student ${inputName} is a teenager.`)
-}
-if (isStudent && age >= 5 && age <= 12) {
+} else if (isStudent && age >= 5 && age <= 12) {
   console.log(`Student ${inputName} is a child.`)
-}
-if (!isStudent && age >= 20 && age <= 30) {
+} else if (isStudent && age >= 20 && age <= 30) {
   console.log(`${inputName} is a young adult.`)
 } else {
   console.log(`${inputName} is in a different life stage.`)
